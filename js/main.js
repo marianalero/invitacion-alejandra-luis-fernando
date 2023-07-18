@@ -108,28 +108,6 @@
 
 
 
-	// Page Nav
-	var clickMenu = function() {
-
-		$('a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
-		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
-
-		    if ( navbar.is(':visible')) {
-		    	navbar.removeClass('in');
-		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-qbootstrap-nav-toggle').removeClass('active');
-		    }
-
-		    event.preventDefault();
-		    return false;
-		});
-
-	};
-
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
 
@@ -307,7 +285,17 @@
 		
 	
 	}
-	
+	document.getElementById("reservaciones").addEventListener("click", reservaciones);
+	function reservaciones(){
+		console.log("btn1")
+		window.open("https://goo.gl/maps/B1abstbzvqdEMA9L6","_blank")
+	}
+
+	document.getElementById("iralmapa").addEventListener("click", irAlMapa);
+	function irAlMapa(){
+		console.log("btn2")
+		window.open("https://goo.gl/maps/B1abstbzvqdEMA9L6","_blank")
+	}
 	
 
 	// Document on load.
@@ -316,7 +304,7 @@
 		burgerMenu();
 		testimonialCarousel();
 		sliderMain();
-		clickMenu();
+
 		parallax();
 		// windowScroll();
 		navigationSection();
