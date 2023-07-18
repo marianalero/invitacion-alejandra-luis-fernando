@@ -303,7 +303,7 @@
 		number = number.substring(30,32);
 	
 		console.log("confirmando",number);
-		window.open("https://wa.me/+526622909176/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%Alejandra%20y%20Luis%20Fernando%20para%20"+number+" personas","_blank");
+		window.open("https://wa.me/+526622909176/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Alejandra%20y%20Luis%20Fernando%20para%20"+number+" personas","_blank");
 		
 	
 	}
