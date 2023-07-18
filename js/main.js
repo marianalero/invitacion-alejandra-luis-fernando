@@ -298,11 +298,11 @@
 	
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
-		var name = document.getElementById("name").value
+	
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
-		// number = number.slice(-6);
-		console.log("confirmando",name,number);
+	
+		console.log("confirmando",number);
 		window.open("https://wa.me/+526622909176/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%Alejandra%20y%20Luis%20Fernando%20para%20"+number+" personas","_blank");
 		
 	
